@@ -45,7 +45,7 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: "Open Sans Regular";
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
   color: #607D8B;
 }
@@ -76,8 +76,8 @@ body {
 }
 #app-wrapper .attention-icon {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border: 10px solid #FFE0B2;
   border-radius: 50%;
   transition: all 0.2s linear;
@@ -86,10 +86,104 @@ body {
   width: 120px;
   height: 120px;
 }
+.pix-container {
+  float: left;
+  width: 40%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+.pix-container .row {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.pix-container img {
+  display: block;
+  float: left;
+  width: 120px;
+  height: 120px;
+  background: lightgray;
+  box-sizing: border-box;
+  border: none;
+}
+.prices-container {
+  float: left;
+  width: 60%;
+  min-height: 200px;
+  padding: 40px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+.prices-container table {
+  width: 100%;
+  border-spacing: 0px;
+}
+.prices-container table caption {
+  padding-bottom: 5px;
+  font-family: "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  color: #90A4AE;
+}
+.prices-container table tr:nth-child(2n) {
+  background: #EEEEEE;
+}
+.prices-container table th {
+  margin-bottom: 10px;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Didact Gothic";
+  text-align: left;
+  vertical-align: middle;
+  color: #263238;
+  background: #ECEFF1;
+}
+.prices-container table th.r {
+  width: 10%;
+}
+.prices-container table th.brand {
+  width: 20%;
+}
+.prices-container table th.length {
+  width: 20%;
+  text-align: center;
+}
+.prices-container table th.price {
+  width: 20%;
+  text-align: right;
+}
+.prices-container table td {
+  padding: 5px;
+  font-family: "Didact Gothic";
+}
+.prices-container table td.r {
+  width: 25%;
+}
+.prices-container table td.brand {
+  width: 25%;
+}
+.prices-container table td.length {
+  width: 25%;
+  text-align: center;
+}
+.prices-container table td.price {
+  width: 25%;
+  text-align: right;
+}
 #app-header {
   height: 400px;
 }
 #app-why-we {
+  overflow: auto;
+  background: white;
+}
+#app-armature {
   overflow: auto;
   background: #FAFAFA;
 }
