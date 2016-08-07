@@ -19,6 +19,7 @@
 }
 
 
+@app-footer-height: 50px;
 @product-width: 120px;
 @product-height: 120px;
 
@@ -247,7 +248,8 @@ body {
 
 
 #app-header {
-  height: 400px;
+  height: 490px;
+  background: url("../images/header_2.jpg");
   //border: 1px solid red;
 }
 
@@ -286,6 +288,7 @@ body {
 
 #app-request {
   overflow: auto;
+  padding-bottom: 50px;
   background: #FAFAFA;
 
   .form {
@@ -301,6 +304,7 @@ body {
       margin-bottom: 5px;
       font-family: "Didact Gothic";
       font-size: 15px;
+      color: #0277BD;
     }
 
     input[type='text'] {
@@ -324,13 +328,134 @@ body {
       border: none;
       border-radius: 4px;
       outline: none;
+      cursor: pointer;
+
+      &:hover {
+        background: #0D47A1;
+      }
     }
   }
 
   .info {
     float: left;
     width: 50%;
+    padding-right: 40px;
+    padding-left: 60px;
     box-sizing: border-box;
+    //border: 1px solid blue;
+
+    img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      margin-top: -20px;
+    }
+
+    .text {
+      display: block;
+      margin-top: -60px;
+      padding: 40px;
+      padding-top: 60px;
+      font-family: "Didact Gothic";
+      font-size: 17px;
+      line-height: 25px;
+      color: #757575;
+      background: #EEEEEE;
+    }
+  }
+}
+
+
+#app-contacts {
+  overflow: auto;
+  background: white;
+
+  .info {
+    float: left;
+    width: 50%;
+    padding: 40px;
+    border: 1px solid red;
+    box-sizing: border-box;
+  }
+
+  .map {
+    float: left;
+    width: 50%;
     border: 1px solid blue;
+    box-sizing: border-box;
+  }
+
+  .label {
+    display: block;
+    font-family: "Didact Gothic";
+    font-size: 18px;
+    color: #0277BD;
+  }
+
+  .value {
+    display: block;
+    font-family: "Didact Gothic";
+    font-size: 25px;
+    color: black;
+  }
+}
+
+#app-footer {
+  height: @app-footer-height;
+  font-family: "Didact Gothic";
+  background: #424242;
+
+  .left {
+    float: left;
+    //padding: 15px;
+    padding-left: 20px;
+    line-height: @app-footer-height;
+    color: white;
+    box-sizing: border-box;
+  }
+
+  .center {
+    float: left;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 40px;
+
+    .links {
+      margin-left: auto;
+      margin-right: auto;
+
+      a {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 17px;
+        line-height: @app-footer-height;
+        color: #90CAF9;
+
+        &:hover {
+          color: #1E88E5;
+        }
+      }
+    }
+  }
+
+  .right {
+    float: right;
+    padding-right: 20px;
+
+    .phone {
+      display: block;
+      font-size: 17px;
+      text-align: right;
+      color: white;
+    }
+
+    .worktime {
+      display: block;
+      font-size: 14px;
+      color: white;
+    }
   }
 }

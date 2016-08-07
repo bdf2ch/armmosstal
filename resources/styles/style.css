@@ -191,7 +191,8 @@ body {
   text-align: center;
 }
 #app-header {
-  height: 400px;
+  height: 490px;
+  background: url("../images/header_2.jpg");
 }
 #app-why-we {
   overflow: auto;
@@ -216,6 +217,7 @@ body {
 }
 #app-request {
   overflow: auto;
+  padding-bottom: 50px;
   background: #FAFAFA;
 }
 #app-request .form {
@@ -230,6 +232,7 @@ body {
   margin-bottom: 5px;
   font-family: "Didact Gothic";
   font-size: 15px;
+  color: #0277BD;
 }
 #app-request .form input[type='text'] {
   display: block;
@@ -251,10 +254,111 @@ body {
   border: none;
   border-radius: 4px;
   outline: none;
+  cursor: pointer;
+}
+#app-request .form input[type='submit']:hover {
+  background: #0D47A1;
 }
 #app-request .info {
   float: left;
   width: 50%;
+  padding-right: 40px;
+  padding-left: 60px;
   box-sizing: border-box;
+}
+#app-request .info img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+#app-request .info .text {
+  display: block;
+  margin-top: -60px;
+  padding: 40px;
+  padding-top: 60px;
+  font-family: "Didact Gothic";
+  font-size: 17px;
+  line-height: 25px;
+  color: #757575;
+  background: #EEEEEE;
+}
+#app-contacts {
+  overflow: auto;
+  background: white;
+}
+#app-contacts .info {
+  float: left;
+  width: 50%;
+  padding: 40px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+#app-contacts .map {
+  float: left;
+  width: 50%;
   border: 1px solid blue;
+  box-sizing: border-box;
+}
+#app-contacts .label {
+  display: block;
+  font-family: "Didact Gothic";
+  font-size: 18px;
+  color: #0277BD;
+}
+#app-contacts .value {
+  display: block;
+  font-family: "Didact Gothic";
+  font-size: 25px;
+  color: black;
+}
+#app-footer {
+  height: 50px;
+  font-family: "Didact Gothic";
+  background: #424242;
+}
+#app-footer .left {
+  float: left;
+  padding-left: 20px;
+  line-height: 50px;
+  color: white;
+  box-sizing: border-box;
+}
+#app-footer .center {
+  float: left;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 40px;
+}
+#app-footer .center .links {
+  margin-left: auto;
+  margin-right: auto;
+}
+#app-footer .center .links a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 17px;
+  line-height: 50px;
+  color: #90CAF9;
+}
+#app-footer .center .links a:hover {
+  color: #1E88E5;
+}
+#app-footer .right {
+  float: right;
+  padding-right: 20px;
+}
+#app-footer .right .phone {
+  display: block;
+  font-size: 17px;
+  text-align: right;
+  color: white;
+}
+#app-footer .right .worktime {
+  display: block;
+  font-size: 14px;
+  color: white;
 }
